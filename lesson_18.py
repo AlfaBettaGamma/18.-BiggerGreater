@@ -137,8 +137,10 @@ def BiggerGreater(input):
   if index > 0:
     result = englishLetters(st)
     result = magicEnglish(result)
+    result = ''.join(result)
     return result
   else:  
     result = russianLetters(st)
     result = magicRussian(result)
+    result = ''.join(result)
     return result

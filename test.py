@@ -137,17 +137,24 @@ def BiggerGreater(input):
   if index > 0:
     result = englishLetters(st)
     result = magicEnglish(result)
+    result = ''.join(result)
     return result
   else:  
     result = russianLetters(st)
     result = magicRussian(result)
+    result = ''.join(result)
     return result
 
-print(BiggerGreater('нклм'))
-print(BiggerGreater('вибк'))
-print(BiggerGreater('вкиб'))
-print(BiggerGreater('ая'))
-print(BiggerGreater('fff'))
-print(BiggerGreater('az'))
-print(BiggerGreater('fff'))
-print(BiggerGreater('nklm'))
+def test1():
+  print(BiggerGreater('нклм'))
+  print(BiggerGreater('вибк'))
+  print(BiggerGreater('вкиб'))
+  print(BiggerGreater('ая'))
+  print(BiggerGreater('fff'))
+  print(BiggerGreater('az'))
+  print(BiggerGreater('fff'))
+  print(BiggerGreater('nklm'))
+  print(BiggerGreater('ббббб'))
+  print(BiggerGreater('абвгд'))
+
+test = test1()
