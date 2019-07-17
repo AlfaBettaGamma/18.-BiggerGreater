@@ -54,6 +54,8 @@ def magicRussian(result):
     if result[0] < result[1]:
       res.append(result[1])
       res.append(result[0])
+    else:
+      return ''
     res = russianLetters(res)
     return res
   elif result[0] == stres[1] or result[1] == stres[0]:
@@ -92,6 +94,8 @@ def magicEnglish(result):
     if result[0] < result[1]:
       res.append(result[1])
       res.append(result[0])
+    else:
+      return ''
     res = englishLetters(res)
     return res
   elif result[0] == stres[1] or result[1] == stres[0]:
@@ -152,9 +156,16 @@ def test1():
   print(BiggerGreater('ая'))
   print(BiggerGreater('fff'))
   print(BiggerGreater('az'))
+  print(BiggerGreater('za'))
   print(BiggerGreater('fff'))
   print(BiggerGreater('nklm'))
   print(BiggerGreater('ббббб'))
   print(BiggerGreater('абвгд'))
 
-test = test1()
+def test2():
+  print(BiggerGreater('az'))
+  print(BiggerGreater('za'))
+  print(BiggerGreater('ая'))
+  print(BiggerGreater('яа'))
+
+test = test2()
